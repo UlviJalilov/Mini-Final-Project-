@@ -151,7 +151,7 @@ table {
   align-items: center;
 }
 
-.flex-center, #purpose .circle-play-btn button, #work .work-card .work-content, #products .product-card .product-content, #products .product-card, #about .container, #banner .video .video-img .play-btn, #banner .modal, #hero .special, #hero .image-grid .circle-img, #hero .image-grid .star-img, #navbar .nav-row .actions .dark-mode {
+.flex-center, #digital .circle-play-btn button, #purpose .circle-play-btn button, #work .work-card .work-content, #products .product-card .product-content, #products .product-card, #about .container, #banner .video .video-img .play-btn, #banner .modal, #hero .special, #hero .image-grid .circle-img, #hero .image-grid .star-img, #navbar .nav-row .actions .dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1611,6 +1611,174 @@ footer .about-footer .container .about h5 {
   fill: #000;
 }
 
+#blog {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#blog .blog-row {
+  display: flex;
+  justify-content: space-between;
+}
+#blog .blog-row .left-section {
+  display: flex;
+  gap: 10px;
+}
+#blog .blog-row .left-section .flower-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+#blog .blog-row .left-section .flower-content p {
+  color: #666;
+  font-weight: 400;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+#blog .blog-row .left-section .flower-content .flower-img {
+  display: flex;
+  justify-content: flex-end;
+}
+#blog .blog-row .center-section .line {
+  width: 1px;
+  height: 200px;
+  background-color: #ddd;
+}
+#blog .blog-row .right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#blog .blog-row .right-section h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #151515;
+}
+#blog .blog-row .right-section .title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#blog .blog-row .right-section .title-row span {
+  font-weight: 600;
+  color: #151515;
+}
+#blog .blog-img {
+  position: relative;
+  background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+#blog .blog-img::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+#blog .blog-img .img-content {
+  position: absolute;
+  color: #fff;
+  z-index: 9;
+  left: 40px;
+  bottom: 20px;
+}
+#blog .blog-img .img-content h2 {
+  line-height: 1.5;
+}
+#blog .blog-img .img-content .detail {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+  align-items: center;
+}
+#blog .blog-img .img-content .detail .sline {
+  width: 1px;
+  height: 22px;
+  background-color: #ddd;
+}
+#blog .blog-img .img-content .detail .date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#blog .blog-img .img-content .detail .date p {
+  margin: 0 auto;
+}
+#blog .blog-img .img-content .detail .secondspan {
+  color: #f0804d;
+}
+#blog .blog-img .img-content .detail .date {
+  display: flex;
+}
+#blog .blog-right {
+  overflow: hidden;
+}
+#blog .blog-right .right-img {
+  background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+}
+#blog .blog-right .right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+}
+#blog .blog-right .right-content .detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+#blog .blog-right .right-content .detail .secondspan {
+  color: #f0804d;
+  font-weight: 500;
+}
+#blog .blog-right .right-content .detail .sline {
+  width: 1px;
+  height: 22px;
+  background-color: #ddd;
+}
+#blog .blog-right .right-content .detail .date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#blog .blog-right .right-content .detail .date p {
+  margin: 0 auto;
+}
+#blog .blog-right .right-content h4 {
+  font-weight: 600;
+  color: #151515;
+}
+#blog .blog-right .right-content p {
+  color: #666;
+  line-height: 1.6;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+}
+#blog .blog-right .right-content .read-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#blog .blog-right .right-content .read-btn a button {
+  border: none;
+  border-bottom: 1px solid #000;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #151515;
+}
+
 #client {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -1947,174 +2115,6 @@ footer .about-footer .container .about h5 {
      object-fit: contain;
 }
 
-#blog {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-#blog .blog-row {
-  display: flex;
-  justify-content: space-between;
-}
-#blog .blog-row .left-section {
-  display: flex;
-  gap: 10px;
-}
-#blog .blog-row .left-section .flower-content {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 15px;
-}
-#blog .blog-row .left-section .flower-content p {
-  color: #666;
-  font-weight: 400;
-  line-height: 1.7;
-  white-space: nowrap;
-}
-#blog .blog-row .left-section .flower-content .flower-img {
-  display: flex;
-  justify-content: flex-end;
-}
-#blog .blog-row .center-section .line {
-  width: 1px;
-  height: 200px;
-  background-color: #ddd;
-}
-#blog .blog-row .right-section {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-#blog .blog-row .right-section h1 {
-  font-size: 50px;
-  font-weight: 600;
-  color: #151515;
-}
-#blog .blog-row .right-section .title-row {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-#blog .blog-row .right-section .title-row span {
-  font-weight: 600;
-  color: #151515;
-}
-#blog .blog-img {
-  position: relative;
-  background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-#blog .blog-img::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-}
-#blog .blog-img .img-content {
-  position: absolute;
-  color: #fff;
-  z-index: 9;
-  left: 40px;
-  bottom: 20px;
-}
-#blog .blog-img .img-content h2 {
-  line-height: 1.5;
-}
-#blog .blog-img .img-content .detail {
-  display: flex;
-  font-size: 14px;
-  gap: 20px;
-  align-items: center;
-}
-#blog .blog-img .img-content .detail .sline {
-  width: 1px;
-  height: 22px;
-  background-color: #ddd;
-}
-#blog .blog-img .img-content .detail .date {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#blog .blog-img .img-content .detail .date p {
-  margin: 0 auto;
-}
-#blog .blog-img .img-content .detail .secondspan {
-  color: #f0804d;
-}
-#blog .blog-img .img-content .detail .date {
-  display: flex;
-}
-#blog .blog-right {
-  overflow: hidden;
-}
-#blog .blog-right .right-img {
-  background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 260px;
-}
-#blog .blog-right .right-content {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding-top: 20px;
-}
-#blog .blog-right .right-content .detail {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 14px;
-}
-#blog .blog-right .right-content .detail .secondspan {
-  color: #f0804d;
-  font-weight: 500;
-}
-#blog .blog-right .right-content .detail .sline {
-  width: 1px;
-  height: 22px;
-  background-color: #ddd;
-}
-#blog .blog-right .right-content .detail .date {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#blog .blog-right .right-content .detail .date p {
-  margin: 0 auto;
-}
-#blog .blog-right .right-content h4 {
-  font-weight: 600;
-  color: #151515;
-}
-#blog .blog-right .right-content p {
-  color: #666;
-  line-height: 1.6;
-  white-space: nowrap;
-  font-size: 15px;
-  font-weight: 500;
-}
-#blog .blog-right .right-content .read-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#blog .blog-right .right-content .read-btn a button {
-  border: none;
-  border-bottom: 1px solid #000;
-  line-height: 1.5;
-  font-weight: 600;
-  color: #151515;
-}
-
 #project {
   background-color: #f6f6f6;
   padding: 100px 0;
@@ -2196,170 +2196,203 @@ footer .about-footer .container .about h5 {
   transform: rotate(-40deg);
 }
 
-#blog {
-  padding-top: 100px;
-  padding-bottom: 50px;
+#digital {
+  padding-top: 200px;
 }
-#blog .blog-row {
+#digital .title-row {
   display: flex;
-  justify-content: space-between;
 }
-#blog .blog-row .left-section {
-  display: flex;
-  gap: 10px;
-}
-#blog .blog-row .left-section .flower-content {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 15px;
-}
-#blog .blog-row .left-section .flower-content p {
-  color: #666;
-  font-weight: 400;
-  line-height: 1.7;
-  white-space: nowrap;
-}
-#blog .blog-row .left-section .flower-content .flower-img {
-  display: flex;
-  justify-content: flex-end;
-}
-#blog .blog-row .center-section .line {
-  width: 1px;
-  height: 200px;
-  background-color: #ddd;
-}
-#blog .blog-row .right-section {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-#blog .blog-row .right-section h1 {
-  font-size: 50px;
-  font-weight: 600;
-  color: #151515;
-}
-#blog .blog-row .right-section .title-row {
+#digital .title-row .title {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
-#blog .blog-row .right-section .title-row span {
+#digital .title-row .title h2 {
+  font-size: 48px;
+  white-space: nowrap;
   font-weight: 600;
   color: #151515;
+  text-transform: capitalize;
 }
-#blog .blog-img {
+#digital .title-row .right-title {
+  display: flex;
+  align-items: center;
+}
+#digital .title-row .right-title h1 {
+  font-size: 190px;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+#digital .text p {
+  line-height: 1.5;
+  color: #666;
+  white-space: nowrap;
+}
+#digital .circle-play-btn {
   position: relative;
-  background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  bottom: 80px;
 }
-#blog .blog-img::after {
+#digital .circle-play-btn button {
+  padding: 20px 20px;
+  border-radius: 50%;
+  border: none;
+  background: #f5f5f5;
+  cursor: pointer;
   position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
+}
+#digital .circle-play-btn button i {
+  font-size: 30px;
+  color: #000;
+}
+#digital .circle-play-btn .circle-text-wrapper {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#digital .circle-play-btn .circle-text {
   width: 100%;
   height: 100%;
-  background-color: #000;
-  opacity: 0.5;
+  animation: rotateText 15s linear infinite;
 }
-#blog .blog-img .img-content {
-  position: absolute;
-  color: #fff;
-  z-index: 9;
-  left: 40px;
-  bottom: 20px;
+#digital .circle-play-btn .circle-text svg {
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  text-transform: uppercase;
 }
-#blog .blog-img .img-content h2 {
-  line-height: 1.5;
+#digital .circle-play-btn .circle-text text {
+  font-size: 15px;
+  letter-spacing: 9px;
+  fill: #000;
 }
-#blog .blog-img .img-content .detail {
-  display: flex;
-  font-size: 14px;
-  gap: 20px;
-  align-items: center;
-}
-#blog .blog-img .img-content .detail .sline {
-  width: 1px;
-  height: 22px;
-  background-color: #ddd;
-}
-#blog .blog-img .img-content .detail .date {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#blog .blog-img .img-content .detail .date p {
-  margin: 0 auto;
-}
-#blog .blog-img .img-content .detail .secondspan {
-  color: #f0804d;
-}
-#blog .blog-img .img-content .detail .date {
-  display: flex;
-}
-#blog .blog-right {
+#digital .digital-card {
   overflow: hidden;
 }
-#blog .blog-right .right-img {
-  background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 260px;
+#digital .digital-card .card-img {
+  width: 100%;
+  height: auto;
 }
-#blog .blog-right .right-content {
+#digital .digital-card .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#digital .digital-card .digital-content .detail {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 15px;
+  font-size: 14px;
   padding-top: 20px;
 }
-#blog .blog-right .right-content .detail {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 14px;
+#digital .digital-card .digital-content .detail .writer .secondspan {
+  color: #ff8851;
 }
-#blog .blog-right .right-content .detail .secondspan {
-  color: #f0804d;
-  font-weight: 500;
-}
-#blog .blog-right .right-content .detail .sline {
+#digital .digital-card .digital-content .detail .sline {
   width: 1px;
-  height: 22px;
-  background-color: #ddd;
+  height: 20px;
+  background-color: #ccc;
 }
-#blog .blog-right .right-content .detail .date {
+#digital .digital-card .digital-content .detail .date {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#blog .blog-right .right-content .detail .date p {
+#digital .digital-card .digital-content .detail .date p {
   margin: 0 auto;
 }
-#blog .blog-right .right-content h4 {
+#digital .digital-card .digital-content h4 {
   font-weight: 600;
   color: #151515;
+  padding-top: 20px;
 }
-#blog .blog-right .right-content p {
-  color: #666;
-  line-height: 1.6;
-  white-space: nowrap;
-  font-size: 15px;
-  font-weight: 500;
-}
-#blog .blog-right .right-content .read-btn {
+#digital .digital-card .digital-content .read-btn {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-top: 10px;
 }
-#blog .blog-right .right-content .read-btn a button {
+#digital .digital-card .digital-content .read-btn a button {
   border: none;
   border-bottom: 1px solid #000;
   line-height: 1.5;
   font-weight: 600;
   color: #151515;
+  background: transparent;
+}
+#digital .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#digital .pagination a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  margin: 5px;
+}
+
+#subscribe {
+  position: relative;
+  padding: 100px 0;
+}
+#subscribe .sub-img {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#subscribe .sub-img img {
+  width: 100%;
+  height: auto;
+}
+#subscribe .row.position-absolute .contact,
+#subscribe .row.position-absolute .email {
+  color: #151515;
+  text-align: start;
+}
+#subscribe .row.position-absolute .contact {
+  padding-left: 70px;
+}
+#subscribe .row.position-absolute .contact h2 {
+  font-weight: 600;
+}
+#subscribe .row.position-absolute .email h2 {
+  font-weight: 600;
+}
+#subscribe .row.position-absolute .email span {
+  font-weight: 600;
+}
+#subscribe .row.position-absolute .email form {
+  position: relative;
+  margin-top: 20px;
+}
+#subscribe .row.position-absolute .email form input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+#subscribe .row.position-absolute .email form .line {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+#subscribe .row.position-absolute .email form img {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transform: rotate(-40deg);
 }/*# sourceMappingURL=style.css.map */
