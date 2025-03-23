@@ -1,0 +1,102 @@
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#purpose {
+    padding-top: 100px;
+    .purpose-content {
+
+        h2 {
+            color: #151515;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .artech-shadow {
+            font-size: 9rem;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(153, 153, 153, 0.267);
+        }
+
+        .flex-paragraph {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            p {
+                max-width: 700px;
+                line-height: 1.7;
+                color: $paragraphy-color;
+                font-size: 1rem;
+                font-weight: 500;
+
+            }
+        }
+
+
+
+    }
+
+    .circle-play-btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        left: 55%;
+        bottom: 50px;
+
+        button {
+            padding: 20px 20px;
+            border-radius: 50%;
+            border: none;
+            background: #f5f5f5;
+            @extend .flex-center;
+            cursor: pointer;
+            position: absolute;
+
+            i {
+                font-size: 30px;
+                color: #000;
+            }
+        }
+
+        .circle-text-wrapper {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle-text {
+            width: 100%;
+            height: 100%;
+            animation: rotateText 15s linear infinite;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                font-size: 11px;
+                text-transform: uppercase;
+            }
+
+            text {
+                font-size: 15px;
+                letter-spacing: 9px;
+                fill: #000;
+            }
+        }
+    }
+
+}

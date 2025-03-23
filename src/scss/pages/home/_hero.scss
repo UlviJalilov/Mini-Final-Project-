@@ -1,0 +1,373 @@
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#hero {
+    padding-top: 300px;
+    margin: $center;
+    overflow: hidden;
+
+
+
+
+    .different-img {
+        position: relative;
+        top: -50px;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        animation: rotateImage 20s linear infinite;
+
+    }
+
+    .left-section {
+        position: relative;
+
+
+        .home-circle {
+            width: 382px;
+            height: 382px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            position: absolute;
+            bottom: 72%;
+            left: -130px;
+            animation: rotateImage 80s linear infinite;
+
+            .small-flower {
+                position: absolute;
+                left: 20%;
+                top: -10px;
+                font-size: 35px;
+
+            }
+        }
+
+        .home-circle-second {
+            overflow: hidden;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            position: absolute;
+            left: 180%;
+            bottom: 90%;
+        }
+
+
+        .left-content {
+            color: #151515;
+            position: relative;
+
+
+
+            .first-paragraphy {
+                font-size: 17px;
+                color: #151515;
+                font-weight: 600;
+                position: relative;
+
+                .paragraphy-img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                    position: absolute;
+                    bottom: 12px;
+                }
+            }
+
+            .agency-title {
+                padding-bottom: 50px;
+
+                .first-head {
+                    font-size: 100px;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+
+                .second-head {
+                    font-size: 100px;
+                    font-weight: 600;
+                }
+
+                .moonimg {
+                    margin-left: 30px;
+                }
+
+                .second-paragraphy {
+                    color: #767676;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+
+            .square {
+                @extend .flex-start;
+                gap: 40px;
+                position: relative;
+
+
+
+                .square-img {
+                    position: relative;
+
+                    img {
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+
+
+                .corner {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border: 3px solid black;
+                }
+
+                .top-left {
+                    top: -10px;
+                    left: -10px;
+                    border-right: none;
+                    border-bottom: none;
+                }
+
+                .top-right {
+                    top: -10px;
+                    right: -10px;
+                    border-left: none;
+                    border-bottom: none;
+                }
+
+                .bottom-left {
+                    bottom: -10px;
+                    left: -10px;
+                    border-right: none;
+                    border-top: none;
+                }
+
+                .bottom-right {
+                    bottom: -10px;
+                    right: -10px;
+                    border-left: none;
+                    border-top: none;
+                }
+
+
+                .square-reviews {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    font-size: 15px;
+                    color: #151515;
+                    padding-top: 30px;
+
+
+                    span {
+                        white-space: nowrap;
+                        font-weight: 700;
+                        color: #151515;
+                        font-size: 17px;
+                    }
+
+                }
+
+
+
+            }
+
+            .suqare-buttons {
+                display: flex;
+                gap: 26px;
+                color: #151515;
+                padding-top: 40px;
+
+
+                button {
+                    padding: 12px 30px;
+                    border: 2px solid transparent;
+                    border-radius: 25px;
+                    font-weight: 500;
+                    transition: 0.5s ease-in-out;
+                    background: linear-gradient(white, white) padding-box,
+                        linear-gradient(to bottom, black, transparent 50%, black) border-box;
+
+                    &:hover {
+                        background: $primary-color;
+                        color: $secondary-color;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 400px;
+        position: relative;
+
+        .star-img {
+            @extend .flex-center;
+            animation: rotateImage 20s linear infinite;
+            position: absolute;
+            top: 5%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+
+
+            .star {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+
+        .circle-img {
+            @extend .flex-center;
+            animation: rotateImage 20s linear infinite;
+            top: 5%;
+            right: -30px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+
+
+            .circle {
+                object-fit: cover;
+                width: 150%;
+                height: 150%;
+            }
+        }
+
+
+    }
+
+    .cell {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        background: url("https://uithemez.com/i/artech/home1_creativeAgency/assets/img/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size: 400px 400px;
+    }
+
+
+    .cell:nth-child(1) {
+        background-position: 0px 0px;
+    }
+
+    .cell:nth-child(2) {
+        background-position: -100px 0px;
+    }
+
+    .cell:nth-child(3) {
+        background-position: -200px 0px;
+    }
+
+    .cell:nth-child(4) {
+        background-position: -300px 0px;
+    }
+
+    .cell:nth-child(5) {
+        background-position: 0px -100px;
+    }
+
+    .cell:nth-child(6) {
+        background-position: -100px -100px;
+    }
+
+    .cell:nth-child(7) {
+        background-position: -200px -100px;
+    }
+
+    .cell:nth-child(8) {
+        background-position: -300px -100px;
+    }
+
+    .cell:nth-child(9) {
+        background-position: 0px -200px;
+    }
+
+    .cell:nth-child(10) {
+        background-position: -100px -200px;
+    }
+
+    .cell:nth-child(11) {
+        background-position: -200px -200px;
+    }
+
+    .cell:nth-child(12) {
+        background-position: -300px -200px;
+    }
+
+    .cell:nth-child(13) {
+        background-position: 0px -300px;
+    }
+
+    .cell:nth-child(14) {
+        background-position: -100px -300px;
+    }
+
+    .cell:nth-child(15) {
+        background-position: -200px -300px;
+    }
+
+    .cell:nth-child(16) {
+        background-position: -300px -300px;
+    }
+
+
+    .empty {
+        background: #fff;
+    }
+
+
+    .special {
+        @extend .flex-center;
+        background: #fff;
+    }
+
+    .special img {
+        width: 40px;
+        height: auto;
+    }
+
+    .shadow-title {
+        font-size: 9rem;
+        color: #f3f3f3;
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 73%;
+            top: 40%;
+            object-fit: cover;
+
+
+        }
+    }
+
+}
+
+@media (max-width: 468px) {
+    #hero {
+        padding-top: 300px;
+
+
+    }
+}
