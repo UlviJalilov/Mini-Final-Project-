@@ -1,0 +1,147 @@
+#client {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .overlay-img {
+        background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/testi/testi_bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+
+
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.85;
+        }
+
+
+
+        .left-section {
+            .user-img {
+                position: absolute;
+                z-index: 9;
+                width: 400px;
+                height: auto;
+                top: 38%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+        .client-detail {
+            .client-content {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: absolute;
+                z-index: 9;
+                top: 50%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+
+                h2 {
+                    color: #fbfbfb;
+                    padding-bottom: 50px;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+
+                p {
+                    line-height: 1.5;
+                    font-size: 30px;
+                    color: #fbfbfb;
+                    white-space: nowrap;
+                }
+
+                .reviews {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    padding-bottom: 10px;
+
+                    img {
+                        padding-right: 20px;
+                    }
+
+                    span {
+                        color: #fbfbfb;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .stars {
+                        i {
+                            color: #ff8851;
+                        }
+                    }
+
+                    :nth-child(4) {
+                        color: gray;
+                        font-weight: 500;
+                        font-size: 17px;
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: gray;
+                }
+
+                .user-bottom {
+                    padding-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+                    color: #151515;
+
+
+                    button {
+                        padding: 15px 30px;
+                        border: 2px solid #ccc;
+                        border-radius: 25px;
+                        font-weight: 500;
+                        transition: 0.5s ease-in-out;
+                        background: transparent;
+                        color: #fbfbfb;
+
+
+                        &:hover {
+                            background-color: #ffffff;
+                            color: $primary-color;
+                        }
+                    }
+
+                    h4 {
+                        color: #fbfbfb;
+                        font-weight: 600;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+
+
+}

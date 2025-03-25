@@ -1,0 +1,214 @@
+#blog {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .blog-row {
+        display: flex;
+        justify-content: space-between;
+
+        .left-section {
+            display: flex;
+            gap: 10px;
+
+            .flower-content {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 15px;
+
+                p {
+                    color: $paragraphy-color;
+                    font-weight: 400;
+                    line-height: 1.7;
+                    white-space: nowrap;
+                }
+
+                .flower-img {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .center-section {
+            .line {
+                width: 1px;
+                height: 200px;
+                background-color: #ddd;
+            }
+        }
+
+        .right-section {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            h1 {
+                font-size: 50px;
+                font-weight: 600;
+                color: #151515;
+            }
+
+            .title-row {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                span {
+                    font-weight: 600;
+                    color: #151515;
+                }
+            }
+
+        }
+    }
+
+
+    .blog-img {
+        position: relative;
+        background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.5;
+        }
+
+        .img-content {
+            position: absolute;
+            color: #fff;
+            z-index: 9;
+            left: 40px;
+            bottom: 20px;
+
+            h2 {
+                line-height: 1.5;
+            }
+
+            .detail {
+                display: flex;
+                font-size: 14px;
+                gap: 20px;
+                align-items: center;
+
+
+
+                .sline {
+                    width: 1px;
+                    height: 22px;
+                    background-color: #ddd;
+                }
+
+                .date {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        margin: 0 auto;
+                    }
+                }
+
+                .secondspan {
+                    color: #f0804d;
+                }
+
+                .date {
+                    display: flex;
+                }
+            }
+        }
+
+
+
+    }
+
+
+    .blog-right {
+        overflow: hidden;
+
+        .right-img {
+            background-image: url(https://uithemez.com/i/artech/home1_creativeAgency/assets/img/blog/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 260px;
+        }
+
+        .right-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-top: 20px;
+
+            .detail {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 14px;
+
+                .secondspan {
+                    color: #f0804d;
+                    font-weight: 500;
+                }
+
+                .sline {
+                    width: 1px;
+                    height: 22px;
+                    background-color: #ddd;
+                }
+
+                .date {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            h4 {
+                font-weight: 600;
+                color: #151515;
+            }
+
+            p {
+                color: $paragraphy-color;
+                line-height: 1.6;
+                white-space: nowrap;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .read-btn {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                a {
+
+                    button {
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        line-height: 1.5;
+                        font-weight: 600;
+                        color: #151515;
+                    }
+                }
+            }
+        }
+    }
+
+}
