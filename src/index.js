@@ -24,42 +24,42 @@ document.addEventListener("DOMContentLoaded", function () {
     const leftSection = document.querySelector(".left-section");
     const rightSection = document.querySelector(".right-section");
 
-    // İlk klikdə overlay açılmasını başlatmaq
+    
     hamburger.addEventListener("click", function () {
-        // İlk dəfə overlay açılmadan əvvəl vəziyyəti sıfırlamaq üçün
-        leftSection.style.top = "-100%";  // Yuxarıda gizlidir
-        rightSection.style.bottom = "-100%";  // Aşağıda gizlidir
+       
+        leftSection.style.top = "-100%";  
+        rightSection.style.bottom = "-100%";  
 
-        // Bir qədər gözlədikdən sonra animasiyanı başlatmaq
+      
         setTimeout(function () {
-            overlay.classList.add("active");  // Overlay görünür olacaq
+            overlay.classList.add("active");  
 
-            // Animasiya başlasın: left-section yuxarıya, right-section aşağıya hərəkət etsin
+
             setTimeout(function () {
-                leftSection.style.top = "0";  // Yuxarıya hərəkət etsin
-                rightSection.style.bottom = "0";  // Aşağıya hərəkət etsin
+                leftSection.style.top = "0";  
+                rightSection.style.bottom = "0";  
             }, 500); 
         }, ); 
     });
 
-    // Close button-u ilə overlay bağlama
+   
     closeButton.addEventListener("click", function () {
-        // Left və Right section-ları gizlət
-        leftSection.style.top = "-100%";  // Yuxarıya getsin
-        rightSection.style.bottom = "-100%";  // Aşağıya getsin
+    
+        leftSection.style.top = "-100%"; 
+        rightSection.style.bottom = "-100%";  
 
-        // Overlay bağlandıqdan sonra gizlənməsi
+       
         setTimeout(function () {
-            overlay.classList.remove("active");  // Overlay gizlənir
-        }, 500);  // Animasiya bitdikdən sonra
+            overlay.classList.remove("active");  
+        }, 500);  
     });
 });
 
 
 
 window.addEventListener("scroll", function () {
-    let scrollTop = window.scrollY; // Scroll nə qədər olub
-    let scaleValue = 1 + scrollTop * 0.0001; // Scroll dərəcəsinə uyğun böyüt
+    let scrollTop = window.scrollY; 
+    let scaleValue = 1 + scrollTop * 0.0001; 
 
     let img = document.querySelector(".video-img img");
     if (img) {
@@ -72,23 +72,23 @@ window.addEventListener("scroll", function () {
 function openVideo() {
     let videoUrl = "https://www.youtube.com/embed/qYgdnM3BC3g?autoplay=1";
     document.getElementById("youtubeFrame").src = videoUrl;
-    document.getElementById("videoModal").style.display = "flex"; // Modal açılır
+    document.getElementById("videoModal").style.display = "flex"; 
 }
 
 function closeVideo() {
-    document.getElementById("videoModal").style.display = "none"; // Modal bağlanır
-    document.getElementById("youtubeFrame").src = ""; // Videonu sıfırlayırıq ki, səslər gəlməsin
+    document.getElementById("videoModal").style.display = "none"; 
+    document.getElementById("youtubeFrame").src = ""; 
 }
 
 
 let floatingImage = document.querySelector(".floating-image");
-let initialTop = 450; // Başlanğıc top dəyəri
+let initialTop = 450;
 let lastScrollTop = window.scrollY;
-let targetTop = initialTop; // Hədəf mövqe
-let currentTop = initialTop; // Mövcud top dəyəri
+let targetTop = initialTop; 
+let currentTop = initialTop; 
 
 function updatePosition() {
-    currentTop += (targetTop - currentTop) * 0.07; // Yumşaq keçid (0.07 dəyərini dəyişə bilərsən)
+    currentTop += (targetTop - currentTop) * 0.07; 
     floatingImage.style.top = `${currentTop}px`;
 
     if (Math.abs(targetTop - currentTop) > 0.5) {
@@ -107,12 +107,12 @@ document.addEventListener("scroll", function () {
 
 
 window.addEventListener("scroll", function () {
-    let scrollTop = window.scrollY; // Scroll nə qədər olub
-    let scaleValue = 1 + scrollTop * 0.0001; // Scroll dərəcəsinə uyğun böyüt
+    let scrollTop = window.scrollY; 
+    let scaleValue = 1 + scrollTop * 0.0001; 
 
-    // Bütün şəkilləri seçirik
+    
     document.querySelectorAll(".work-img img").forEach(img => {
-        img.style.transform = `scale(${scaleValue})`; // Yalnız vizual böyütmə
+        img.style.transform = `scale(${scaleValue})`; 
     });
 });
 
